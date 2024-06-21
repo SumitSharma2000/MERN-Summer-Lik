@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <form onsubmit="handleSubmit(event)">
+            <h2>Login And Sign Up</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required autocomplete="off">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="off">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="pass" required autocomplete="off">
+
+            <label for="number">Phone Number</label>
+            <input type="number" id="number" name="number" required autocomplete="off" maxlength="10">
+
+            <label for="profileImage">Profile Image</label>
+            <input type="file" id="profileImage" name="profileImage" accept="image/*" required>
+
+            <button type="submit" id="btn1">Sign Up</button><br><br>
+
+            <span>OR</span><br>
+
+            <button type="submit" id="btn2">Sign Up with Google</button><br><br>
+            <span>Already have an account? <a href="#">Login</a></span>
+        </form>
+        <p id="data"></p>
+        <div id="root"></div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

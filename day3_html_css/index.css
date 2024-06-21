@@ -1,0 +1,100 @@
+/* ul{
+    background-color: rgb(73, 73, 49);
+}
+
+p:first-child{
+    color: brown;
+}
+li:nth-child(2){
+    color: rgb(255, 255, 7);
+}
+
+ li:last-child{
+    color: aqua;
+ }    */
+
+ /* .child{
+    background-color: aqua;
+    border: 1px solid black;
+    flex-basis: 120px;
+    flex-shrink: 0;
+
+ } */
+
+ .child2{
+    /* flex-grow: 2; */
+ }
+
+ .search{
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+
+ }
+ 
+/* 
+ .parent{
+    background-color: blueviolet;
+    display: flex;
+ }
+ */
+
+ *{
+   padding: 0;
+   margin: 0;
+ }
+
+ /* .child{
+   background-color: aqua;
+   border: 1px solid black;
+   text-align: center;
+   align-content: center;
+ }
+
+ .parent{
+   height: 540px;
+   display: grid;
+   /* grid-template-columns: 100px 200px 300px 100px; */
+   /* grid-template-columns: 1fr 2fr 3fr 1fr; */
+   /* grid-template-columns: repeat(4, 100px);
+   background-color: yellow;
+   grid-auto-rows: 100px;
+   row-gap: 10px;
+   column-gap: 20px;
+
+   justify-content: center; */
+   /* justify-items: center; */
+
+   /* align-items: center; */
+   /* align-content: center;  */
+
+
+ /* .child2{
+   grid-column-start: 2;
+   grid-column-end: 4;
+
+   grid-row-start: 2;
+   grid-row-end: 4;
+ } */ 
+
+ .parent-new{
+   background-color: aquamarine;
+   height: 300px;
+   width: 300px;
+ }
+
+ .children{
+   background-color: rgb(255, 127, 127);
+   height: 200px;
+   width: 200px;
+ }
+ .children1{
+   background-color: yellow;
+   height: 200px;
+   width: 200px;
+ }
+
+ .children{
+   position: relative;
+   left: 20px;
+   top: 20px;
+ }

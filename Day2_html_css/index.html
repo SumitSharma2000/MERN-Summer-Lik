@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms and CSS</title>
+</head>
+<body>
+    <form method= "get" action="./contact.html">  
+        <!-- // post will not work by browser because its a default behaviour -->
+        <label for="n1">Username: </label>
+        <input id="n1" type="text" placeholder="Please enter the name" name="username" autocomplete="off" required><br><br>
+        <label for="a1">Age: </label>
+        <input id="a1" type="number" placeholder="Please enter the age" name="userage" required><br><br>
+        <label for="p1">Password: </label>
+        <input id="p1" type="password" placeholder="Please enter password" name="password" required><br><br>
+        <label>Gender: </label><br>
+        <input type="radio" name="gender" value="male" id="m1" checked><label for="m1">Male</label><br>
+        <input type="radio" name="gender" value="female" id="f1"><label for="f1">Female</label><br><br>
+        <label>Place: </label>
+        <input type="checkbox" name="Place1" value="Place1" id="u1" checked><label for="u1" >Urban</label>
+        <input type="checkbox" name="Place2" value="Place2" id="r1"><label for="r1">Rural</label>
+        <input type="checkbox" name="Place3" value="Place3" id="s"><label for="s">Smart City</label>
+        <input type="checkbox" name="Place4" value="Place4" id="m"><label for="m">Metropolitan</label><br><br>
+        <label>Message: </label>
+        <textarea name="Description" required></textarea><br><br>
+
+
+        <label>City: </label>
+        <select name="city">
+            <option value="delhi" selected>Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="lucknow">Lucknow</option>
+            <option value="japan">Japan</option>
+            <option value="dehradun">Dehradun</option>
+        </select><br><br>
+
+        <input type="submit" value="Done">
+        <input type="reset" value="Reset">
+        
+    </form>
+</body>
+</html>
