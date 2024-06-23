@@ -1,48 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Document</title>
-    <style>
-         * {
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styled Document</title>
+        <style>
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
 
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
         nav {
             height: 10vh;
-            background-color: azure;
-            text-align: center;
-            align-content: center;
-            color: black;
-            padding-left: 10px;
+            background-color: #004aad;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-left {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-right a:hover {
+            text-decoration: underline;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input[type="text"] {
+            padding: 12px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        .search-container button {
+            padding: 12px 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #ddd;
         }
 
         main {
             padding: 48px;
-            height: 70vh;
-            background-color: blanchedalmond;
+            background-image: url('https://m.media-amazon.com/images/I/61-YNJ8K3ML.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
+        main a {
+            color: rgb(10, 2, 2);
+            font-size: 3rem;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        main a:hover{
+            cursor: pointer;
+            color: #004aad;
+            text-decoration: underline;
+        }
+
+
+    
         footer {
-            height: 20vh;
-            background-color: rgb(8, 7, 7);
-            color: aliceblue;
+            height: 10vh;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .social-media {
+            display: flex;
+        }
+
+        .social-media a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            text-decoration: underline;
         }
 
     </style>
-</head>
-<body>
-    <nav>
-        Navigation Bar
-    </nav>
-    <main>
-        <a href="./products">Welcome Sumit Products</a>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-    </footer>
-</body>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                Sammy Designs
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <div class="nav-right">
+                <a href="/">Home</a>
+                <a href="./products">Products</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </nav>
+        <main>
+            <a href="./products">Welcome Sumit Products</a>
+        </main>
+        <footer>
+            <div class="footer-left">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+            <div class="social-media">
+                <a href="#facebook">Facebook</a>
+                <a href="#twitter">Twitter</a>
+                <a href="#instagram">Instagram</a>
+            </div>
+        </footer>
+    </body>
 </html>

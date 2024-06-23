@@ -3,11 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Page</title>
+    <title>Product View</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f8fc;
+        }
+
+        nav {
+            height: 10vh;
+            background-color: #004aad;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-left {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-right a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-right a:hover {
+            text-decoration: underline;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input[type="text"] {
+            padding: 12px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        .search-container button {
+            padding: 12px 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #ddd;
+        }
+
+        main {
+            padding: 48px;
+            min-height: 80vh;
+            text-align: center;
+        }
+
+        .product-details {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            width: 40%;
+            height: 10%;
+            margin: 0 auto;
+            padding: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-details img {
+            display: block;
+            width: 75%;
+            height: auto;
+            margin-bottom: 16px;
+        }
+
+        .product-details h2 {
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .product-details h4 {
+            margin-bottom: 16px;
+            color: #004aad;
+            font-size: 1.2rem;
+        }
+
+        .product-details p {
+            margin-bottom: 16px;
+            color: #666;
+            font-size: 1rem;
+        }
+
+        footer {
+            height: 10vh;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-media {
+            display: flex;
+        }
+
+        .social-media a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <nav></nav>
-    <main>$TITLE$</main>
-    <footer></footer>
+    <nav>
+        <div class="nav-left">
+            Sammy Designs
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="nav-right">
+            <a href="/">Home</a>
+            <a href="./products">Products</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+    <main>
+        $TITLE$
+    </main>
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+        <div class="social-media">
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter</a>
+            <a href="#instagram">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -37,12 +37,12 @@ const app = http.createServer(async (req, res) => {
       let text = bf.toString();
       text = text.replace(
         "$TITLE$",
-        `<div>
-          <h2>${product.title}</h2>
-          <img src="${product.thumbnail}" height="300">
-          <h4>${product.price}</h4>
-          <p>${product.description}</p>
-        </div>`
+        `<div class="product-details">
+              <h2>${product.title}</h2>
+              <img src="${product.thumbnail}" alt="${product.title}">
+              <h4>$${product.price}</h4>
+              <p>${product.description}</p>
+          </div>`
       );
       res.end(text);
       break;
