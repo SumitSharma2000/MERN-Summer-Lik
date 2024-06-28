@@ -53,6 +53,25 @@ const app = http.createServer(async (req, res) => {
   }
 });
 
+// function searchProducts() {
+//   const searchText = document.getElementById('search-input').value;
+//   const pr = fetch(`https://dummyjson.com/products/search?q=${searchText}`);
+//   pr.then((res) => {
+//     return res.json();
+//   }).then((data) => {
+//     createUI(data);
+//   }).catch((err) => {
+//     console.log("Error occurred! ", err);
+//   });
+// }
+
+// const searchInput = document.getElementById('search-input');
+// searchInput.addEventListener('keydown', (e) => {
+//   if (e.key === 'Enter') {
+//     searchProducts();
+//   }
+// });
+
 app.listen(1400, () => {
   console.log("server is running on port 1400");
 });
